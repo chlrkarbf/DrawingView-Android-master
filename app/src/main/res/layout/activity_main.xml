@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4E1B67"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.mukesh.drawingview.example.MainActivity">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_centerInParent="true"
+      android:background="#4E1B67">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="218dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/neurozen_logo" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <com.mukesh.DrawingView
+      android:id="@+id/scratch_pad"
+      android:layout_width="881dp"
+      android:layout_height="736dp"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentBottom="true"
+      android:layout_centerVertical="true"
+      android:layout_marginStart="47dp"
+      android:layout_marginLeft="47dp"
+      android:layout_marginTop="0dp"
+      android:layout_marginEnd="0dp"
+      android:layout_marginRight="0dp"
+      android:layout_marginBottom="0dp"
+      android:layout_toEndOf="@+id/size_layout"
+      android:layout_toRightOf="@+id/size_layout"
+      android:background="#FFFFFF" />
+
+  <LinearLayout
+      android:id="@+id/size_layout"
+      android:layout_width="224dp"
+      android:layout_height="323dp"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginStart="0dp"
+      android:layout_marginLeft="0dp"
+      android:layout_marginTop="0dp"
+      android:background="#F8F8F8"
+      android:orientation="vertical">
+
+    <Button
+        android:id="@+id/pen_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableLeft="@android:drawable/ic_menu_edit"
+        android:drawablePadding="-50px"
+        android:fontFamily="sans-serif-black"
+        android:shadowColor="#FBF7F7"
+        android:text="Pen" />
+
+    <Button
+        android:id="@+id/eraser_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableStart="@android:drawable/ic_menu_delete"
+        android:drawablePadding="-50px"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/eraser_button"
+        android:drawableLeft="@android:drawable/ic_menu_delete" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pen Size" />
+
+    <SeekBar
+        android:id="@+id/pen_size_seekbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eraser Size" />
+
+    <SeekBar
+        android:id="@+id/eraser_size_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableLeft="@android:drawable/ic_menu_save"
+        android:drawablePadding="-50px"
+        android:drawingCacheQuality="auto"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/save_button" />
+  </LinearLayout>
+
+</RelativeLayout>

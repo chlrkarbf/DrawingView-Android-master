@@ -1,0 +1,40 @@
+{
+  "stringTable": {},
+  "buildFiles": [
+    "/Users/choejeonghui/Desktop/DrawingView-Android-master/app/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/choejeonghui/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+      "-C",
+      "/Users/choejeonghui/Desktop/DrawingView-Android-master/app/.cxx/Debug/6gl3g2g4/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/choejeonghui/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+    "-C",
+    "/Users/choejeonghui/Desktop/DrawingView-Android-master/app/.cxx/Debug/6gl3g2g4/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "example-Debug-x86": {
+      "buildCommandComponents": [
+        "/Users/choejeonghui/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/Users/choejeonghui/Desktop/DrawingView-Android-master/app/.cxx/Debug/6gl3g2g4/x86",
+        "example"
+      ],
+      "buildType": "debug",
+      "abi": "x86",
+      "artifactName": "example",
+      "output": "/Users/choejeonghui/Desktop/DrawingView-Android-master/app/build/intermediates/cxx/Debug/6gl3g2g4/obj/x86/libexample.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {},
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

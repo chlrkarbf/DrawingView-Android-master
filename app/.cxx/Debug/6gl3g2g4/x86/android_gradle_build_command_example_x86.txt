@@ -1,0 +1,7 @@
+Executable : /Users/choejeonghui/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
+arguments : 
+-C
+/Users/choejeonghui/Desktop/DrawingView-Android-master/app/.cxx/Debug/6gl3g2g4/x86
+example
+jvmArgs : 
+
