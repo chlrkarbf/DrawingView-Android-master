@@ -185,35 +185,6 @@ public class DrawingView extends View {
 
 
   public boolean saveImage(String filePath, String filename, Bitmap.CompressFormat format,
-      int quality) {
-    if (quality > 100) {
-      Log.d("saveImage", "quality cannot be greater that 100");
-      return false;
-    }
-    File file;
-    FileOutputStream out = null;
-    try {
-      switch (format) {
-        case PNG:
-          file = new File(filePath, filename + ".png");
-          out = new FileOutputStream(file);
-          return bitmap.compress(Bitmap.CompressFormat.PNG, quality, out);
-        case JPEG:
-          file = new File(filePath, filename + ".jpg");
-          out = new FileOutputStream(file);
-          return bitmap.compress(Bitmap.CompressFormat.JPEG, quality, out);
-      }
-    } catch (Exception e) {
-      e.printStackTrace();
-    } finally {
-      try {
-        if (out != null) {
-          out.close();
-        }
-      } catch (IOException e) {
-        e.printStackTrace();
-      }
-    }
-    return false;
+      int quality) {//비트맵을 jpeg로 올려야함
   }
 }
