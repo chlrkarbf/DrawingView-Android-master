@@ -186,5 +186,6 @@ public class DrawingView extends View {
 
   public boolean saveImage(String filePath, String filename, Bitmap.CompressFormat format,
       int quality) {//비트맵을 jpeg로 올려야함
+
   }
 }
